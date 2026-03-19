@@ -1,105 +1,30 @@
-body{
-    font-family: Arial;
-    background: #f5f5f5;
-    text-align: center;
-}
-
-h1{
-    background: linear-gradient(to right, #ff6600, #ffcc00);
-    color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.product{
-    background: white;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    transition: transform 0.3s;
-}
-
-.product:hover{
-    transform: scale(1.03);
-}
-
-#cart{
-    list-style: none;
-    padding: 0;
-    margin: 10px auto;
-    max-width: 300px;
-}
-
-button{
-    background: linear-gradient(to right, #ff6600, #ffcc00);
-    color: white;
-    border: none;
-    padding: 10px 25px;
-    margin-top: 10px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-button:hover{
-    opacity: 0.9;
-}
-
-input{
-    padding: 10px;
-    margin: 5px;
-    width: 200px;
-}
-
-#orders li{
-    background: #fffbe6;
-    margin: 10px;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-/* Mobile responsive */
-@media screen and (max-width: 768px){
-    body{
-        font-size: 16px;
-    }
-    .product{
-        margin: 10px;
-        padding: 15px;
-    }
-    button{
-        padding: 8px 16px;
-    }
-    input{
-        width: 90%;
-    }
-}
 body {
   font-family: Arial;
-  margin: 0;
   background: linear-gradient(to right, #ff7e5f, #feb47b);
-}
-
-h1 {
   text-align: center;
   color: white;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .product {
   background: white;
-  margin: 20px;
+  color: black;
   padding: 20px;
-  border-radius: 15px;
-  text-align: center;
+  margin: 20px;
+  width: 200px;
+  border-radius: 10px;
 }
 
-#adminBtn {
-  background: red;
-  color: white;
+button {
   padding: 10px;
-  border-radius: 8px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
