@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Signup - Frozofeet</title>
+</head>
+<body>
+<h2>Create Account</h2>
+<input type="email" id="email" placeholder="Email"><br><br>
+<input type="password" id="password" placeholder="Password"><br><br>
+<button onclick="signup()">Signup</button>
+
+<script>
+function signup(){
+    let email=document.getElementById("email").value
+    let password=document.getElementById("password").value
+    fetch("http://localhost:3000/signup",{
+        method:"POST",
+        headers:{"Content-Type":"application/json"},
+        body:JSON.stringify({email,password})
+    })
+    .then(res=>res.text())
+    .then(data=>alert(data))
+}
+</script>
+</body>
+</html>

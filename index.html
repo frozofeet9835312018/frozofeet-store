@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,3 +29,38 @@
 
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Frozofeet Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🍹 Frozofeet Juice Store</h1>
+
+<button onclick="login()">Login</button>
+<button onclick="openAdmin()">Admin Panel</button>
+
+<div id="products"></div>
+
+<!-- Admin Panel -->
+<div id="adminPanel" class="hidden">
+  <h2>Admin Panel 👑</h2>
+
+  <input type="text" id="pname" placeholder="Product Name">
+  <input type="number" id="pprice" placeholder="Price">
+  <input type="text" id="pdesc" placeholder="Description">
+
+  <button onclick="addProduct()">Add Product</button>
+  <button onclick="closeAdmin()">Close</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+>>>>>>> 9e9e090 (fix)

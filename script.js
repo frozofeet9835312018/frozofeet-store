@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 let products = [];
 
 function renderProducts() {
@@ -70,3 +71,48 @@ function closeAdmin() {
 }
 
 renderProducts();
+=======
+const SUPABASE_URL = "ysbvvacxgsdwfpufvqvt";
+const SUPABASE_KEY = "sb_publishable_SImU_jBP5kTp3NcTEr5NhA_2Lt2Kosk";
+
+const client = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
+
+async function renderProducts() {
+  const { data } = await client.from("products").select("*");
+
+  let html = "";
+
+  data.forEach((p) => {
+    html += `
+      <div class="product">
+        <h3>${p.name}</h3>
+        <p>${p.desc}</p>
+        <p>₹${p.price}</p>
+        <p>${p.stock ? "In Stock" : "Out of Stock"}</p>
+
+        <button onclick="orderNow()">Order</button>
+      </div>
+    `;
+  });
+
+  document.getElementById("products").innerHTML = html;
+}
+
+async function addProduct() {
+  let name = document.getElementById("pname").value;
+  let price = document.getElementById("pprice").value;
+  let desc = document.getElementById("pdesc").value;
+
+  await client.from("products").insert([
+    { name, price, desc, stock: true }
+  ]);
+
+  renderProducts();
+}
+
+function orderNow() {
+  window.open("https://docs.google.com/forms/d/e/1FAIpQLSe-7N5UEgtCtmckjNalMQXygN3a7JZMGAsva-f6T28wySSnZw/viewform", "_blank");
+}
+
+renderProducts();
+>>>>>>> 9e9e090 (fix)

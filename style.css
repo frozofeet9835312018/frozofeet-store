@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   font-family: Arial;
   background: linear-gradient(to right, #ff7e5f, #feb47b);
@@ -38,3 +39,53 @@ button {
   width: 300px;
   border-radius: 10px;
 }
+=======
+body {
+  font-family: Arial;
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  text-align: center;
+  color: white;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  background: black;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.product {
+  background: white;
+  color: black;
+  margin: 15px auto;
+  padding: 15px;
+  width: 250px;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+#adminPanel {
+  background: white;
+  color: black;
+  padding: 20px;
+  position: fixed;
+  top: 20%;
+  left: 35%;
+  width: 300px;
+  border-radius: 10px;
+}
+
+.stock-green {
+  color: green;
+}
+
+.stock-red {
+  color: red;
+}
+>>>>>>> 9e9e090 (fix)
