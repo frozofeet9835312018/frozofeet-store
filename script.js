@@ -1,5 +1,5 @@
 alert("JS chal raha hai");
-<<<<<<< HEAD
+HEAD
 let products = [];
 
 function renderProducts() {
@@ -114,6 +114,3 @@ async function addProduct() {
 function orderNow() {
   window.open("https://docs.google.com/forms/d/e/1FAIpQLSe-7N5UEgtCtmckjNalMQXygN3a7JZMGAsva-f6T28wySSnZw/viewform", "_blank");
 }
-
-renderProducts();
->>>>>>> 9e9e090 (fix)
