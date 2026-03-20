@@ -48,7 +48,7 @@ function toggleStock(i) {
 }
 
 function orderNow() {
-  window.open("https://docs.google.com/forms/d/e/1FAIpQLSe-7N5UEgtCtmckjNalMQXygN3a7JZMGAsva-f6T28wySSnZw/viewform", "_blank");
+  window.open("https://forms.gle/U8DdrXUH9no1vzEC9", "_blank");
 }
 
 function login() {
