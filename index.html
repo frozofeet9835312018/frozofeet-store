@@ -8,36 +8,23 @@
 
 <h1>🍹 Frozofeet Juice Store</h1>
 
-<div class="container">
+<button onclick="login()">Login</button>
+<button onclick="openAdmin()">Admin Panel</button>
 
-  <!-- Product 1 -->
-  <div class="product">
-    <h2>Mango Juice 🥭</h2>
-    <p>₹50</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVjFMphT4Dh70WW1H0sE7dmxSL4BNJshGp8m98qmeu9GTNaw/viewform?usp=dialog" target="_blank">
-      <button>Order Now</button>
-    </a>
-  </div>
+<div id="products"></div>
 
-  <!-- Product 2 -->
-  <div class="product">
-    <h2>Orange Juice 🍊</h2>
-    <p>₹60</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVjFMphT4Dh70WW1H0sE7dmxSL4BNJshGp8m98qmeu9GTNaw/viewform?usp=dialog" target="_blank">
-      <button>Order Now</button>
-    </a>
-  </div>
+<!-- Admin Panel -->
+<div id="adminPanel" class="hidden">
+  <h2>Admin Panel</h2>
 
-  <!-- Product 3 -->
-  <div class="product">
-    <h2>Mix Fruit Juice 🍹</h2>
-    <p>₹70</p>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeVjFMphT4Dh70WW1H0sE7dmxSL4BNJshGp8m98qmeu9GTNaw/viewform?usp=dialog" target="_blank">
-      <button>Order Now</button>
-    </a>
-  </div>
+  <input type="text" id="pname" placeholder="Product Name">
+  <input type="number" id="pprice" placeholder="Price">
+  <button onclick="addProduct()">Add Product</button>
 
+  <button onclick="closeAdmin()">Close</button>
 </div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
