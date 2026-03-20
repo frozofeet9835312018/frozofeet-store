@@ -1,3 +1,4 @@
+alert("JS chal raha hai");
 <<<<<<< HEAD
 let products = [];
 
